@@ -10,7 +10,5 @@ int main(void)
   printf("%d\n", age) ;
   printf("%f\n", height) ;
 
-  // printf("After passing 5 years, you're %d years old \n", age+5) ;
-
   return 0 ;
 }
