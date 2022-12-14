@@ -9,30 +9,25 @@ int main(void)
 	scanf("%d", &b);
 	printf("3つ目 > ");
 	scanf("%d", &c);
-	if (a >= b && a >= c)
-	{
-		printf("最大値は%dです。\n", a);
-	}
-	if (b > a && b >= c)
-	{
-		printf("最大値は%dです。\n", b);
-	}
-	if (c > a && c > b)
-	{
-		printf("最大値は%dです。\n", c);
-	}
-	if (a <= b && a <= c)
-	{
-		printf("最小値は%dです。\n", a);
-	}
-	if (b < a && b <= c)
-	{
-		printf("最小値は%dです。\n", b);
-	}
-	if (c < a && c < b)
-	{
-		printf("最小値は%dです。\n", c);
-	}
+	int max = a ;
+  int min = a ;
+
+  if(b>max){
+    max = b;
+  }
+  if(c>max){
+    max = c;
+  }
+
+  if(b<min){
+    min = b;
+  }
+  if(c<min){
+    min = c;
+  }
   
-	return 0;
+  printf("最大値は%dです。\n", max);
+  printf("最小値は%dです。\n", min);
+	
+  return 0;
 }
